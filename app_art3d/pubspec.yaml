@@ -1,5 +1,5 @@
 name: app_art3d
-description: "A new Flutter project."
+description: "Aplicativo do projeto Art3D, vinculado ao grupo de pesquisa em Arte e Tecnologias Emergentes."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -36,6 +36,30 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
+  #configurations
+  global_configs: ^1.1.2
+  flutter_cache_manager: ^3.4.2
+
+  #widget design
+  flutter_native_splash: ^2.3.7
+  flutter_widget_from_html: ^0.17.4
+  carousel_slider: ^5.1.2
+  smooth_page_indicator: ^3.0.0
+  popover: ^0.4.0
+  google_nav_bar: ^5.0.7
+  flutter_floating_bottom_bar: ^2.1.0
+  searchable_listview: ^2.19.5
+
+  #maps and coordinates
+  flutter_map: ^8.3.2
+  latlong2: ^0.10.1
+  geocoding: ^5.0.0
+
+  #3D
+  model_viewer_plus: ^1.10.0
+  flutter_3d_controller: ^2.3.0
+  
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -45,7 +69,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_lints: ^6.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -74,17 +98,25 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
+  fonts:
+    - family: amethysta
+      fonts:
+        - asset: fonts/amethysta/Amethysta-Regular.ttf
+          style: normal
+    - family: fake-receipt
+      fonts:
+        - asset: fonts/fake-receipt/FakeReceipt.otf
+    - family: monitorica
+      fonts:
+        - asset: fonts/monitorica/Monitorica-Bd.otf
+          style: normal
+          weight: 800
+        - asset: fonts/monitorica/Monitorica-BdIt.otf
+          style: normal
+          weight: 600
+        - asset: fonts/monitorica/Monitorica-It.otf
+          style: italic
+        - asset: fonts/monitorica/Monitorica-Rg.otf
+          style: normal
+    # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
