@@ -58,6 +58,7 @@ dependencies:
   #3D
   model_viewer_plus: ^1.10.0
   flutter_3d_controller: ^2.3.0
+  http: ^1.6.0
   
 
 dev_dependencies:
@@ -109,10 +110,8 @@ flutter:
     - family: monitorica
       fonts:
         - asset: fonts/monitorica/Monitorica-Bd.otf
-          style: normal
           weight: 800
         - asset: fonts/monitorica/Monitorica-BdIt.otf
-          style: normal
           weight: 600
         - asset: fonts/monitorica/Monitorica-It.otf
           style: italic
