@@ -21,8 +21,15 @@ class _PersonalizedBottomBarState extends State<PersonalizedBottomBar> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return BottomBar(
-        layout: BottomBarLayout(width: MediaQuery.of(context).size.width*0.7,
+        layout: BottomBarLayout(width: MediaQuery.of(context).size.width*0.6,
           offset: 10,
+          borderRadius: BorderRadius.all(Radius.circular(45)),
+        ),
+        theme: BottomBarThemeData(
+          barDecoration: BoxDecoration(
+            color: Theme.of(context).colorScheme.primary,
+            border: Border.all(color: Theme.of(context).colorScheme.onSecondary, width: 1,),
+          ),
         ),
       body: BottomBarBodyPadding(
           child: Padding(
@@ -33,19 +40,25 @@ class _PersonalizedBottomBarState extends State<PersonalizedBottomBar> {
         children: [
           IconButton(
             onPressed: null, 
-            icon: Icon(Icons.map)
+            icon: Icon(Icons.map,
+            color: Theme.of(context).colorScheme.secondary,
+          ),
+            
           ),
           IconButton(
             onPressed: null, 
-            icon: Icon(Icons.museum)
+            icon: Icon(Icons.museum),
+            color: Theme.of(context).colorScheme.secondary,
           ),
           IconButton(
             onPressed: null, 
-            icon: Icon(Icons.chat)
+            icon: Icon(Icons.chat),
+            color: Theme.of(context).colorScheme.secondary,
           ),
           IconButton(
             onPressed: null, 
-            icon: Icon(Icons.info)
+            icon: Icon(Icons.info),
+            color: Theme.of(context).colorScheme.secondary,
           ),
         ],
       ),
