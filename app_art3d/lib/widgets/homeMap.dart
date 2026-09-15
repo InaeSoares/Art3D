@@ -39,12 +39,9 @@ List<Marker> get_markers(obras_escaneadas){
 
   @override
   Widget build(BuildContext context) {
-    initState() {
-      // TODO: implement initState
-      super.initState();
-      markers=get_markers(esculturas_escaneadas);
-      print(markers);
-    }
+    setState(() {
+      get_markers(esculturas_escaneadas);
+    });
     return FlutterMap(
       mapController: new MapController(),
       options: MapOptions(

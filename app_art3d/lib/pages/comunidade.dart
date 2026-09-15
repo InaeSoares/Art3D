@@ -43,7 +43,7 @@ class _CommunityPageState extends State<CommunityPage> {
             )
       ),
       bottomNavigationBar: PersonalizedBottomBar(
-        title: "the bottom bar"
+        title: "comunidade"
      ) // This trailing comma makes auto-formatting nicer for build methods.
     );
   }

@@ -43,7 +43,7 @@ class _GalleryPageState extends State<GalleryPage> {
             )
       ),
       bottomNavigationBar: PersonalizedBottomBar(
-        title: "the bottom bar"
+        title: "galeria"
      ) // This trailing comma makes auto-formatting nicer for build methods.
     );
   }

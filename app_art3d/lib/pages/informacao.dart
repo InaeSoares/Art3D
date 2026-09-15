@@ -43,7 +43,7 @@ class _InformationsPageState extends State<InformationsPage> {
             )
       ),
       bottomNavigationBar: PersonalizedBottomBar(
-        title: "the bottom bar"
+        title: "infos"
      ) // This trailing comma makes auto-formatting nicer for build methods.
     );
   }

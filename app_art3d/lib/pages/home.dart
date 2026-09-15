@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
             HomeMap(title: 'BAP Map'),
       ),
       bottomNavigationBar: PersonalizedBottomBar(
-        title: "the bottom bar"
+        title: "home"
      ) // This trailing comma makes auto-formatting nicer for build methods.
     );
   }

@@ -32,7 +32,7 @@ class _PersonalizedBottomBarState extends State<PersonalizedBottomBar> {
         theme: BottomBarThemeData(
           barDecoration: BoxDecoration(
             color: Theme.of(context).colorScheme.primary,
-            border: Border.all(color: Theme.of(context).colorScheme.onSecondary, width: 1,),
+            border:  Border.all(color: Theme.of(context).colorScheme.onSecondary, width: 1,),
           ),
         ),
       body: BottomBarBodyPadding(
@@ -52,7 +52,7 @@ class _PersonalizedBottomBarState extends State<PersonalizedBottomBar> {
             }, 
             icon: Icon(
               Icons.map,
-              color: Theme.of(context).colorScheme.secondary,
+              color: widget.title=='home' ? Theme.of(context).colorScheme.secondary : Theme.of(context).colorScheme.onPrimary,
             ),
           ),
           IconButton(
@@ -65,7 +65,7 @@ class _PersonalizedBottomBarState extends State<PersonalizedBottomBar> {
             },  
             icon: Icon(
               Icons.museum,
-              color: Theme.of(context).colorScheme.secondary,
+              color: widget.title=='galeria' ? Theme.of(context).colorScheme.secondary : Theme.of(context).colorScheme.onPrimary,
             ),
           ),
           IconButton(
@@ -78,7 +78,7 @@ class _PersonalizedBottomBarState extends State<PersonalizedBottomBar> {
             }, 
             icon: Icon(
               Icons.chat,
-              color: Theme.of(context).colorScheme.secondary,
+              color: widget.title=='comunidade' ? Theme.of(context).colorScheme.secondary : Theme.of(context).colorScheme.onPrimary,
             ),
           ),
           IconButton(
@@ -91,7 +91,7 @@ class _PersonalizedBottomBarState extends State<PersonalizedBottomBar> {
             },  
             icon: Icon(
               Icons.info,
-              color: Theme.of(context).colorScheme.secondary,
+              color: widget.title=='infos' ? Theme.of(context).colorScheme.secondary : Theme.of(context).colorScheme.onPrimary,
             ),
           ),
         ],
