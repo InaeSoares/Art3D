@@ -1,3 +1,7 @@
+import 'package:app_art3d/pages/comunidade.dart';
+import 'package:app_art3d/pages/galeria.dart';
+import 'package:app_art3d/pages/home.dart';
+import 'package:app_art3d/pages/informacao.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_floating_bottom_bar/flutter_floating_bottom_bar.dart';
 
@@ -39,26 +43,56 @@ class _PersonalizedBottomBarState extends State<PersonalizedBottomBar> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           IconButton(
-            onPressed: null, 
-            icon: Icon(Icons.map,
-            color: Theme.of(context).colorScheme.secondary,
-          ),
-            
-          ),
-          IconButton(
-            onPressed: null, 
-            icon: Icon(Icons.museum),
-            color: Theme.of(context).colorScheme.secondary,
-          ),
-          IconButton(
-            onPressed: null, 
-            icon: Icon(Icons.chat),
-            color: Theme.of(context).colorScheme.secondary,
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  builder: (context) => const MyHomePage(title: 'homePage'),
+                ),
+              );
+            }, 
+            icon: Icon(
+              Icons.map,
+              color: Theme.of(context).colorScheme.secondary,
+            ),
           ),
           IconButton(
-            onPressed: null, 
-            icon: Icon(Icons.info),
-            color: Theme.of(context).colorScheme.secondary,
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  builder: (context) => const GalleryPage(title: 'galleryPage'),
+                ),
+              );
+            },  
+            icon: Icon(
+              Icons.museum,
+              color: Theme.of(context).colorScheme.secondary,
+            ),
+          ),
+          IconButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  builder: (context) => const CommunityPage(title: 'communityPage'),
+                ),
+              );
+            }, 
+            icon: Icon(
+              Icons.chat,
+              color: Theme.of(context).colorScheme.secondary,
+            ),
+          ),
+          IconButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  builder: (context) => const InformationsPage(title: 'infoPage'),
+                ),
+              );
+            },  
+            icon: Icon(
+              Icons.info,
+              color: Theme.of(context).colorScheme.secondary,
+            ),
           ),
         ],
       ),
