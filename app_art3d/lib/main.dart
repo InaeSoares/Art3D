@@ -1,3 +1,4 @@
+import 'package:app_art3d/pages/esculturas.dart';
 import 'package:flutter/material.dart';
 import './pages/home.dart';
 
@@ -38,83 +39,83 @@ class MyApp extends StatelessWidget {
           onSecondary: Color.fromRGBO(61, 79, 126, 1.0), 
           error: Color.fromRGBO(153, 15, 2, 1.0), 
           onError: Color.fromRGBO(254, 254, 243, 1.0),
-          surface: Color.fromRGBO(38, 34, 54, 1.0), 
+          surface: Color.fromRGBO(61, 79, 126, 1.0), 
           onSurface: Color.fromRGBO(254, 254, 243, 1.0),
         ),
         textTheme: TextTheme(
           displayLarge: TextStyle(
             color: Color.fromRGBO(254, 254, 243, 1.0),
             fontFamily: 'fake-receipt',
-            fontSize: 24,
+            fontSize: 38,
             fontWeight: FontWeight(200),
           ),
           displayMedium: TextStyle(
             color:  Color.fromRGBO(254, 254, 243, 1.0),
             fontFamily: 'fake-receipt',
-            fontSize: 22,
+            fontSize: 36,
             fontWeight: FontWeight(200),
           ),
           displaySmall: TextStyle(
             color:  Color.fromRGBO(254, 254, 243, 1.0),
             fontFamily: 'fake-receipt',
-            fontSize: 20,
+            fontSize: 34,
             fontWeight: FontWeight(200),
           ),
           headlineLarge: TextStyle(
-            color: Theme.of(context).primaryColor,
+            color: Theme.of(context).colorScheme.onSecondary,
             fontFamily: 'monitorica',
-            fontSize: 20,
+            fontSize: 34,
             fontWeight: FontWeight.w800,
           ),
           headlineMedium: TextStyle(
             color: Theme.of(context).primaryColor,
             fontFamily: 'monitorica',
-            fontSize: 18,
+            fontSize: 32,
             fontWeight: FontWeight.w800,
           ),
           headlineSmall: TextStyle(
             color: Theme.of(context).primaryColor,
             fontFamily: 'monitorica',
-            fontSize: 16,
+            fontSize: 30,
             fontWeight: FontWeight.w800,
           ),
           titleLarge: TextStyle(
             color: Theme.of(context).primaryColor,
             fontFamily: 'monitorica',
-            fontSize: 18,
+            fontSize: 30,
             fontStyle: FontStyle.italic,
           ),
           titleMedium: TextStyle(
             color: Theme.of(context).primaryColor,
             fontFamily: 'monitorica',
-            fontSize: 16,
+            fontSize: 28,
             fontStyle: FontStyle.italic,
           ),
           titleSmall: TextStyle(
             color: Theme.of(context).primaryColor,
             fontFamily: 'monitorica',
-            fontSize: 14,
+            fontSize: 26,
             fontStyle: FontStyle.italic,
           ),
           bodyLarge: TextStyle(
             color: Theme.of(context).primaryColor,
             fontFamily: 'amethysta',
-            fontSize: 14,
+            fontSize: 20,
           ),
           bodyMedium: TextStyle(
             color: Theme.of(context).primaryColor,
             fontFamily: 'amethysta',
-            fontSize: 12,
+            fontSize: 18,
           ),
           bodySmall: TextStyle(
             color: Theme.of(context).primaryColor,
             fontFamily: 'amethysta',
-            fontSize: 10,
+            fontSize: 16,
           ),
         ),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'APB Home'),
+      home: const EsculturasPage(),
     );
   }
 }
